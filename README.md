@@ -28,7 +28,7 @@
 ```bash
 pip install -r requirements.txt
 cp .env.example .env          # впишите ANTHROPIC_API_KEY
-uvicorn app.main:app --port 8000 --loop uvloop --http httptools
+uvicorn app.main:app --port 8000   # uvloop и httptools подхватываются автоматически (кроме Windows)
 # откройте http://localhost:8000
 ```
 
